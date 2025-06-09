@@ -13,7 +13,15 @@ footer a{
 }
 
 #hero{
-    background: url(/static/img/hero.png) no-repeat center center/cover;
+    background: url(/static/img/footer.png) no-repeat center center/cover;
+    color: #d1c6b8;
+}
+
+#hero h1{
+    font-family: "Times new roman", sans-serif;
+    color: #d1c6b8;
+    font-size: 250px;
+    line-height: 0.8;
 }
 
 .navbar {
@@ -22,11 +30,35 @@ footer a{
 }
 
 .mt-n5 {
-    margin-top: -4rem;
+    margin-top: -3.5rem;
 }
 
 .card{
     border-radius: 1rem;
+}
+
+/*showcase*/
+#showcase .card {
+    border-radius: 1rem;
+}
+
+#showcase img {
+    border-radius: 1rem;
+}
+
+.blur-on-hover {
+  filter: blur(3px);
+}
+
+.image-hover-blur:hover .blur-on-hover {
+  filter: blur(0px);
+  transition: filter 0.3s ease;
+}
+
+.custom-img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 1rem;
 }
 
 /*Service*/
@@ -50,10 +82,10 @@ footer a{
 /*Addon conveyer belt*/
 .addons-scroll {
     overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    padding: 1rem 0;
+    background-color: rgba(235, 235, 235, 0.025);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 10px;
     position: relative;
 }
 
@@ -91,6 +123,7 @@ footer a{
   z-index: 1;
   transition: height 0.6s ease;
   pointer-events: none;
+  border-radius: 1rem;
 }
 
 #testimonial .card:hover::before {
