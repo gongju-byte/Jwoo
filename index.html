@@ -18,56 +18,53 @@
         <div class="container">
             <a class="navbar-brand" href="#hero">
                 <img src="static/img/whiteflower.png" width="30">
+                <span class="fw-bold mx-2 text-underlined">Jwoo's</span>
             </a>
 
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="b bi-three-dots"></i>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 ms-auto mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About Me</a>
+                        <a class="nav-link" href="#about">¹ About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#showcase">Showcase</a>
+                        <a class="nav-link" href="#showcase">² Showcase</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#service">Service</a>
+                        <a class="nav-link" href="#service">³ Service</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#testimonial">Testimonial</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link disabled" href="#testimonial">⁴ Testimonial (Soon)</a>
                     </li>
                 </ul>
             </div>
-            <a class="btn btn-outline-light mx-2 small rounded-pill" href="">Talk with Me</a>
         </div>
     </nav>
 
     <!--Hero-->
     <section id="hero" class="min-vh-100">
-        <div class="container h-100 d-flex justify-content-center">
-            <div class="col-12 col-md-6">
-                <img src="static/img/elegantcat.png" alt="elegantcat" style="height: 100vh; object-fit: cover;">
+        <div class="container">
+            <div>
+                <img src="static/img/elegantcat.png" alt="elegant cat">
             </div>
-            <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-end px-5">
+            <div id="content" class="d-flex flex-column justify-content-center align-items-end">
                 <h1>Jwoo</h1>
                 <span class="fw-bold" style="font-size: 30px;">Web developer</span>
-                <p class="small text-end">I build custom, responsive websites— landing pages, portfolios, and multi-page microsites, optimized for performance, SEO, and lead-generation. From concept to deployment, I’ll create a site that looks great on any device and turns visitors into customers.</p>
-                <a href="" class="btn btn-outline-light">Schedule a free consult</a>
-            </div>    
+                <p class="col-12 col-md-6 text-end">I build custom, responsive websites— landing pages, portfolios, and multi-page microsites, optimized for performance, SEO, and lead-generation. From concept to deployment, I’ll create a site that looks great on any device and turns visitors into customers.</p>
+                <a href="mailto:gongjwoo@gmail.com?subject=Booking%20a%20free%20consulting%20for%20a%20website&body=Hi%20there%2C%0D%0A%0D%0AI%27m%20interested%20in%20booking%20a%20free%20consultation%20regarding%20a%20website%20project.%20Here%20are%20some%20details%20about%20what%20I%20have%20in%20mind%3A%0D%0A%0D%0A-%20Type%20of%20site%3A%20%5BPortfolio%2C%20Landing%20Page%2C%20or%20Brochure%5D%0D%0A-%20Project%20goals%3A%20%5BDescribe%20your%20objectives%5D%0D%0A-%20Timeline%3A%20%5BEstimated%20timeline%5D%0D%0A%0D%0ALooking%20forward%20to%20your%20response.%0D%0A%0D%0ABest%20regards%2C%0D%0A%5BYour%20Name%5D" class="btn btn-outline-light">Schedule a free consult</a>
+            </div>
         </div>
     </section>
 
     <!--About-->
-    <section id="about" class="min-vh-100 d-flex align-items-center">
+    <section id="about" class="min-vh-100">
         <div class="container">
-            <div class="row justify-content-start">
-                <div class="col-12 col-md-6">
-                    <h1 class="display-5 fw-bold">About Me</h1>
+            <div id="content" class="row justify-content-md-center align-items-center">
+                <div class="col col-md-6">
+                    <h1>About Me</h1>
                     <p class="small">I’m Jwoo, a web developer based in Kuala Lumpur who enjoys building clean, fast, and responsive websites.</p>
                     <p class="small">I recently completed my Diploma in Computer Science, and I’m now exploring freelance work to turn code into real-world solutions and gain hands-on experience.</p>
                     <p class="small">My current focus is on creating <span class="fw-bold">one-page landing sites, personal portfolios, and simple business websites</span> that look great on any device and are easy to maintain.</p>
@@ -77,57 +74,50 @@
                         Download my resume <i class="bi bi-download ms-2"></i>
                     </a>
                 </div>
-                <div class="col-12 col-md-6">
-                    <p class="bg-dark p-2 px-4 rounded-pill">🌏 Based in: Kuala Lumpur</p>
-                    <p class="bg-dark p-2 px-4 rounded-pill">🧠 Learning: React & UI/UX Courses</p>
-                    <p class="bg-dark p-2 px-4 rounded-pill">☕ Fuel: Teh tarik & late-night coding</p>
-                    <div class="bg-dark p-2 px-4">
-                        <p>🧰 Tech Stacks </p>
-                        <p>Front-End : HTML/CSS, JS, Bootstrap</p>
-                        <p>Back-End : Flask, Laravel</p>
-                        <p>Tools : Git, VS Code, Framer</p>
-                        <p>Deployment : Github, Render, Netlify, Vercel</p>
+                <div class="col-md-4">
+                    <img src="static/img/portrait.jpg" alt="kitties" class="w-100">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Showcase-->
+    <section id="showcase" class="min-vh-100">
+        <div class="container">
+            <div id="intro">
+                <h1>Demo Concepts</h1>
+                <p class="lead">This is a sample project created to demonstrate what I can deliver for this niche.</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8">
+                    <div class="card bg-transparent text-bg-dark">
+                        <img src="static/img/portfolio_demo.png" class="card-img" alt="Porfolio demo">
+                        <div class="card-img-overlay d-flex flex-column justify-content-end" style="overflow-y: auto;">
+                            <h5 class="card-title fw-bold">
+                                Portfolio Website - Personal Branding
+                                <a href="https://gongju-byte.github.io/Jwoo/"><i class="bi bi-box-arrow-up-right mx-2 text-light" title="External link"></i></a>
+                            </h5>
+                            <p class="card-text">A personal portfolio is more than a resume — it’s a digital introduction.</p>
+                            <p class="card-text">
+                                <span class="px-3 rounded-pill bg-dark">HTML5</span>
+                                <span class="px-3 rounded-pill bg-dark">CSS</span>
+                                <span class="px-3 rounded-pill bg-dark">bootstrap</span>
+                                <span class="px-3 rounded-pill bg-dark">Github</span>
+                                <span class="px-3 rounded-pill bg-dark">VSCode</span>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!--Project-->
-    <section id="showcase" class="min-vh-100 d-flex align-items-center">
-        <div class="container my-5">
-            <div class="text-center my-5">
-                <h1 class="display-4 fw-bold">Demo Concepts</h1>
-                <p class="lead">This is a sample project created to demonstrate what I can deliver for this niche.</p>
-            </div>
-            <div class="card bg-transparent text-bg-dark image-hover-blur mx-auto" style="width: 70%;">
-                <img src="static/img/portfolio_demo.png" class="card-img blur-on-hover" alt="...">
-                <div class="card-img-overlay d-flex flex-column justify-content-end overlay-blur">
-                    <h5 class="card-title fw-bold ">
-                        Portfolio Website - Personal Branding
-                        <a href="https://gongju-byte.github.io/Jwoo/"><i class="bi bi-box-arrow-up-right mx-2 text-light"></i></a>
-                    </h5>
-                    <p class="card-text small">A personal portfolio is more than a resume — it’s a digital introduction. For this sample, I used my own portfolio site to demonstrate what I can offer clients through clean, responsive, and fast-loading web development.</p>
-                    <p class="card-text small">My approach was to keep the layout simple, accessible, and focused on clarity. I emphasized essential content: who I am, what I do, my work, and how to reach me — all in one smooth, mobile-friendly experience.</p>
-                    <p class="card-text small">A key feature is the call-to-action button, designed to make it easy for clients to get in touch.</p>
-                    <p class="card-text small">
-                        <span class="px-3 rounded-pill bg-dark">HTML5</span>
-                        <span class="px-3 rounded-pill bg-dark">CSS</span>
-                        <span class="px-3 rounded-pill bg-dark">bootstrap</span>
-                        <span class="px-3 rounded-pill bg-dark">Github</span>
-                        <span class="px-3 rounded-pill bg-dark">VSCode</span>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!--Services-->
-    <section id="service" class="min-vh-100 d-flex flex-column align-items-center">
+    <section id="service" class="min-vh-100">
         <div class="container">
-            <h1 class="fw-bold text-center mt-5" style="font-size: 90px;">Services</h1>
-            <div id="service-item">
-                <div class="row row-cols-1 row-cols-md-3 g-4 mt-n5 align-items-center">
+            <h1>Services</h1>
+            <div id="item">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
                     <div class="col">
                         <div class="card p-2 h-100">
                             <div class="card-body">
@@ -146,6 +136,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="col">
                         <div class="card p-2 h-100">
                             <div class="card-body">
@@ -164,63 +155,46 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card p-2">
-                            <div class="card-body">
-                                <h5 class="card-text">Brochure / Microsite</h5>
-                                <p class="card-text small">Ideal for small businesses, events, agencies needing a multi-page web presence.</p>
-                                <h2 class="card-title">RM1500+</h1>
-                                <small>
-                                    <i class="bi bi-check"></i> Multi-section or multi-page layout <br>
-                                    <i class="bi bi-check"></i> Simple but effective navigation <br>
-                                    <i class="bi bi-check"></i> Up to 3-5 sections  (e.g. Home Page, Testimonial, Services) <br>
-                                    <i class="bi bi-check"></i>Built with performance in mind <br>
-                                    <i class="bi bi-check"></i> SEO, form integration, responsive design <br>
-                                </small>
-                                <a href="" class="btn btn-outline-light w-100 mt-3">Book Now</a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
-        </div>
-        <div class="text-center my-4">
-            <a href="" class="btn btn-outline-light rounded-pill px-5">
-                Request Full Quote & Add-Ons
-            </a>
+            <div id="quote">
+                <a href="" class="btn btn-outline-light rounded-pill px-5">
+                    Request Full Quote & Add-Ons
+                </a>
+            </div>
         </div>
     </section>
 
-    <!--Testimonial-->
-    <section id="testimonial" class="min-vh-100 d-flex align-items-center">
+    <!--Testimonial (SOON)
+    <section id="testimonial" class="min-vh-100">
         <div class="container">
-            <h1 class="display-5 fw-bold"><i class="bi bi-stars"></i> What they say</h1>
+            <h1><i class="bi bi-stars"></i> What they say</h1>
             <p class="lead">Testimonials from Satisfied Client</p>
             <div>
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
-                        <div class="card bg-transparent border-light h-100">
+                        <div class="card h-100">
                             <div class="card-body">
                                 <h1 class="display-1 fw-bold"><i class="bi bi-quote"></i></h1>
-                                <p class="card-text p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum non vel doloremque itaque velit dignissimos similique quod cumque unde ullam.</p>
+                                <p class="card-text p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                 <small class="p-2">Lorem Ipsum</small>
                             </div>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card bg-transparent border-light h-100">
+                        <div class="card h-100">
                             <div class="card-body">
                                 <h1 class="display-1 fw-bold"><i class="bi bi-quote"></i></h1>
-                                <p class="card-text p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, sunt!</p>
+                                <p class="card-text p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                 <small class="p-2">Lorem Ipsum</small>
                             </div>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card bg-transparent border-light h-100">
+                        <div class="card h-100">
                             <div class="card-body">
                                 <h1 class="display-1 fw-bold"><i class="bi bi-quote"></i></h1>
-                                <p class="card-text p-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa eligendi quibusdam ullam vero iure dignissimos! <p>
+                                <p class="card-text p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                 <small class="p-2">Lorem Ipsum</small>
                             </div>
                         </div>
@@ -229,64 +203,25 @@
             </div>
         </div>
     </section>
+    -->
 
-    <!--Contact-->
-    <section id="contact" class="min-vh-100 d-flex align-items-center">
+    <footer class="h-25 d-flex align-items-center">
         <div class="container">
-            <h1 class="display-6 fw-bold">Get in Contact</h1>
-            <p class="lead">Let's talk about your project</p>
-            <div class="mx-auto">
-                <form>
-                    <div class="mb-3">
-                        <div class="input-group">
-                        <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
-                        <input type="text" class="form-control" placeholder="Your Name" aria-label="Name" required>
-                        </div>
-                    </div>
-
-                    <div class="mb-3">
-                        <div class="input-group">
-                        <span class="input-group-text"><i class="bi bi-card-list"></i></span>
-                        <select class="form-select" aria-label="Project Type" required>
-                            <option value="" disabled selected>Choose Project Type</option>
-                            <option value="portfolio">Portfolio</option>
-                            <option value="landing-page">Landing Page</option>
-                            <option value="brochure">Brochure</option>
-                        </select>
-                        </div>
-                    </div>
-
-                    <div class="mb-3">
-                        <div class="input-group">
-                        <span class="input-group-text"><i class="bi bi-pencil-square"></i></span>
-                        <textarea class="form-control" rows="4" placeholder="Briefly explain your project..." aria-label="Project Brief" required></textarea>
-                        </div>
-                    </div>
-
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <footer class="h-25 d-flex align-items-center mt-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-8 col-md-10">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-6">
                     <h1 class="display-1 fw-bold mb-0">Jwoo</h1>
-                    <p class="small mb-0">&#169; Developed by yours truly</p>
+                    <p class="small mb-0">&#169; 2025 Developed by Jwoo</p>
                 </div>
-                <div class=" col-4 col-md-2 text-md-start">
+                <div class=" col-4 text-md-start">
                     <ul class="list-unstyled mb-0">
-                        <li><a href=""><i class="bi bi-linkedin me-2"></i>LinkedIn</a></li>
-                        <li><a href=""><i class="bi bi-github me-2"></i>GitHub</a></li>
-                        <li><a href=""><i class="bi bi-envelope-fill me-2"></i>Email</a></li>
+                        <li><a href="https://t.me/gongjwoo"><i class="bi bi-telegram me-2"></i>Telegram</a></li>
+                        <li><a href="http://github.com/gongju-byte/"><i class="bi bi-github me-2"></i>GitHub</a></li>
+                        <li><a href="mailto:gongjwoo@gmail.com"><i class="bi bi-envelope-fill me-2"></i>Email</a></li>
                     </ul>
                 </div>
             </div> 
         </div>
     </footer>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
